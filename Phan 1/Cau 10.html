@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân của Huỳnh Như Ngọc</title>
+    <style>
+       body {
+        font-family:arial, sans-serif;
+        background-color:#f8f8f8;
+        margin:0;
+        padding:20px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        min-height:100vh;
+    }
+
+    h1 {
+        color:#333;
+        margin-bottom: 30px;
+
+    }
+   
+    .protfolio-ca-nhan {
+        max-width:1200px;
+        margin:0 auto;
+        background-color:#f08282;
+        padding:30px;
+        box-shadow:0 0 15px rgba(0,0,0,0.05);
+        border-radius:8px;
+        color: rgb(252, 249, 249);
+    }
+
+    .du-an {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap:20px;
+    }
+
+    .du-an > div {
+        background-color:rgba(255, 255, 255, 0.1);
+        padding:20px;
+        border-radius:8px;
+    }
+
+    .du-an >div:hover {
+        transform:translateY(-5px);
+        box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+    }
+
+    .du-an img {
+        width:100%;
+        height:250px;
+        object-fit:cover;
+        border-radius:4px;
+        margin-bottom:15px;
+    }
+
+    .du-an h3 {
+        color:rgb(252, 249, 249);
+        margin-top:0;
+    }
+
+    .du-an p {
+        color:rgb(252, 249, 249);
+    }
+
+    a {
+        color:#fff;
+        text-decoration:none;
+    }
+
+    a:hover {
+        text-decoration:underline;
+    }
+
+    
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="protfolio-ca-nhan">
+        <header>
+            <img src="https://cdn.dribbble.com/userupload/43883206/file/original-47c68a1f87e6d394ef6401853c408646.jpg?resize=1024x1365&vertical=center" alt="Ảnh đại diện"
+            style="width:800px; height:800px; object-fit:cover;">
+            <h1>Họ và tên: Huỳnh Như Ngọc</h1>
+            <p>Chức danh: sinh viên</p>
+            <p>
+                <a href="https://github.com/HuynhNhuNgoc1006/TH_1" target="_blank">GitHub của tôi</a>
+            </p>
+        </header>
+        <hr>
+        <section>
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào! Tôi là Huỳnh Như Ngọc là sinh viên năm 2 ngành thương mại điện tử. Tôi đam mê đồ họa, quản lý website và marketting online. Mục tiêu của tôi là trở thành người giàu có. Dè dè</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Dự án của tôi</h2>
+            <div class="du-an">
+                <div>
+                    <h3>Dự án 1</h3>
+                    <img src="https://cdn.dribbble.com/userupload/43883320/file/original-aab896f2a5f43fdd2304c19ebc8de7d3.png?resize=1024x554&vertical=center" alt="Hình ảnh dự án 1">
+                    <p>Dự án này tôi cần phải cập nhật thông tin hằng ngày, đăng bài tăng tương tác, đẩy keyword lên top, bổ sung chỉnh sửa thông tin sản phẩm.</p>
+                    <p>
+                        <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChsSEwjV8OGZ_pWOAxWfE3sHHWNzACcYACICCAEQABoCdG0&co=1&gclid=Cj0KCQjwpf7CBhCfARIsANIETVovS19Z02fTPuGXz4Xsjh1dOeJekH9rJ0mXFCKVm75Kj30YbNXHS5YaAsuMEALw_wcB&ei=1tpgaLGNLN3m1e8P-vzzkAw&ohost=www.google.com&cid=CAESVuD2DokLVSZH3x-VVD5lNroTPYCFINTpdvxKnXvfMClQdTce07Coz8mok8GCeBvUqPp9i_TY2lTztwgqzf6f4zWM99ow-z2onDep1aOw2Av4jde173CQ&category=acrcp_v1_40&sig=AOD64_1Jk5bqEhKN5zyALXrSL7O5lmlvwQ&q&sqi=2&adurl&ved=2ahUKEwix0NuZ_pWOAxVdc_UHHXr-HMIQ0Qx6BAgKEAE" target="_blank">Link xem trang web</a>
+                    </p>
+                </div>
+                <div>
+                    <h3>Dự án 2</h3>
+                    <img src="https://cdn.dribbble.com/userupload/43883397/file/original-d5cd431c1d8169945d6b35263db41975.png?resize=752x&vertical=center" alt="Hình ảnh dự án 2">
+                    <p>Dự án này tôi sẽ chỉnh sửa hình ảnh, viết content và đăng bài tăng tương tác.</p>
+                    <p>
+                        <a href="https://thuytinh.net/" target="_blank">Link xem trang </a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section>
+            <h2>Thông tin liên hệ</h2>
+            <p>Nếu bạn quan tâm đến công việc của tôi hoặc muốn hợp tác, đừng ngần ngại hãy liên hệ tôi!</p>
+            <p>Email: <a href="mailto:ngocfhfh12@gmail.com">ngocfhfh12@gmail.com</a></p>
+            <p>Điện thoại: <a href="tel:+84346037890">+(84) 346037890</a></p>
+        </section>
+        <hr>
+        <footer>
+            <p>&copy;2025 Huỳnh Như Ngọc. Mọi quyền được bảo lưu.</p>
+        </footer>
+    </div>
+</body>
+</html>
