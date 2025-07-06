@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family:arial, sans-serif;
+        line-height:1.6;
+        margin:0;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        background-color:#e0f2f7;
+        color:#333;
+
+    }
+
+    h2 {
+        text-align:center;
+        color:#00796b;
+        margin-bottom:30px;
+        font-size:2em;
+        text-shadow:1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    form {
+        background-color:#ffffff;
+        padding:40px 30px;
+        border-radius:12px;
+        box-shadow:0 8px 20px rgba(0,0,0,0.15);
+        max-width:500px;
+        width:90%;
+        box-sizing: border-box;
+        border:1px solid #b2dfdb;
+        }
+
+        div {
+            margin-bottom:20px;
+        }
+
+        label {
+            font-weight:bold;
+        }
+
+        input, textarea {
+            text-decoration:none;
+            border-radius:6px;
+        }
+
+        button {
+            display:block;
+            width:100%;
+            font-weight:bold;
+            padding:12px 20px;
+            border:none;
+            background-color:rgb(79, 212, 168);
+            color:white;
+            border-radius:10px;
+        }
+
+
+
+</style>
+<body>
+    <h2>Đặt bàn tại quán ăn</h2>
+    
+    <form action="Lich_dat" method="post">
+        <div>
+            <label for="ten">Tên của bạn:</label><br>
+            <input type="text" id="ten" name="ten" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="khach">Số lượng khách</label><br>
+            <input type="number" id="khach" name="khach" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="ngaydat">Ngày đặt bàn:</label><br>
+            <input type="date" id="ngaydat" name="ngaydat" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="thoigian">Giờ đặt bàn:</label><br>
+            <input type="time" id="thoigian" name="thoigian" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="yeucau">Yêu cầu đặc biệt (tùy chọn):</label><br>
+            <textarea id="yeucau" name="yeucau" placeholder="Ví dụ: chỗ ngồi gần cửa sổ, bàn cho trẻ em, ăn chay, có tiệc sinh nhật..."></textarea>
+        </div>
+
+        <br>
+
+        <button type="submit">Đặt bàn</button>
+        <p>Chúng tôi sẽ liên hệ với bạn để xác nhận trong thời gian sớm nhất!</p>
+    </form>
+</body>
+</html>
