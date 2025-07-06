@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family:arial, sans-serif;
+        background-color:#f4f4f4;
+        padding:20px;
+        display:flex;
+        justify-content:center;
+        margin:20px;
+        color:#333;
+    }
+
+    form {
+        background:#ffffff;
+        padding:30px;
+        border-radius:8px;
+        box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        max-width:700px;
+        width:100%;
+        box-sizing:border-box;
+        
+    }
+
+    h2 {
+        color:#333;
+        text-align:center !important;
+        margin-bottom:30px;
+    }
+
+    filedset {
+        border:1px solid #ddd;
+        padding:20px;
+        margin-bottom:25;
+        border-radius:5px;
+        background-color:#f9f9f9;
+    }
+
+    legend {
+        font-weight:bold;
+        color:#0056b3;
+        padding:0 10px;
+        font-size:1.1em;
+        margin-bottom:15px;
+    }
+
+    button {
+        display:block;
+        width:100%;
+        padding:12px 20px;
+        border:none;
+        color:white;
+        background-color:#98c2f0;
+        font-weight: bold;
+    }
+
+    button:hover {
+        background-color:#0056b3;
+    }
+</style>
+<body>
+    
+    
+        <form action="/submit-survery" method="post" >
+            <h2>Khảo sát ý kiến người dùng</h2>
+            <fieldset>
+            <legend>1. Bạn biết đến sản phẩm/dịch vụ của chúng tối qua kênh nào?</legend>
+            <input type="radio" id="kenh_qc" name="kenh_biet" value="qc">
+            <label for="kenh_qc">Quảng cáo trên mạng xã hội/website</label><br>
+
+            <input type="radio" id="kenh_gioithieu" name="kenh_biet" value="gioithieu">
+            <label for="kenh_gioithieu">Bạn bè/người thân giới thiệu</label><br>
+
+            <input type="radio" id="kenh_timkiem" name="kenh_biet" value="timkiem">
+            <label for="kenh_timkiem">Tìm kiếm trên Google</label><br>
+
+            <input type="radio" id="kenh_khac" name="kenh_biet" value="khac">
+            <label for="kenh_khac">Khác (vui lòng ghi rõ ở phần bình luận)</label><br>
+            </fieldset>
+            
+            <br>
+
+<fieldset>
+    <legend>2.Những tính năng nào bạn muốn tôi cải thiện hoặc bổ sung?</legend>
+    <input type="checkbox" id="tinhnang_giaodien" name="tinhnang_caithien" value="giaodien">
+    <label for="tinhnang_giaodien">Giao diện người dùng</label><br>
+
+    <input type="checkbox" id="tinhnang_tocdo" name="tinhnang_caithien" value="tocdo">
+    <label for="tinhnang_tocdo">Tốc độ xử lý</label><br>
+
+    <input type="checkbox" id="tinhnang_hotro" name="tinhnang_caithien" value="hotro">
+    <label for="tinhnang_hotro">Hỗ trợ khách hàng</label><br>
+
+    <input type="checkbox" id="tinhnang_baomat" name="tinhnang_caithien" value="baomat">
+    <label for="tinhnang_baomat">Bảo mật thông tin</label><br>
+
+    <input type="checkbox" id="tinhnang_giaca" name="tinhnang_caithien" value="giaca">
+    <label for="tinhnang_giaca">Giá cả</label><br>
+
+    <input type="checkbox" id="tinhnang_khac_checkbox" name="tinhnang_caithien" value="khac_checkbox">
+    <label for="tinhnang_khac_checkbox">Các tính năng khác</label><br>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>3. Bạn đánh giá mức độ hài lòng tổng thể của mình về sản phẩm/dịch vụ của chúng tôi như thế nào?</legend>
+    <select id="muc_do_hai_long" name="muc_do_hai_long">
+        <option value="">-- Chọn mức độ --</option>
+        <option value="rat_khong_hai_long">Rất không hài lòng</option>
+        <option value="khong_hai_long">Không hài lòng</option>
+        <option value="binh_thuong">Bình thường</option>
+        <option value="hai_long">Hài lòng</option>
+        <option value="rat_hai_long">Rất hài lòng</option>
+    </select>
+</fieldset>
+
+<br>
+
+<fieldset>
+    <legend>4. Mọi góp ý hoặc đề xuất khác của bạn:</legend>
+    <textarea id="binh_luan_them" name="binh_luan_them" rows="6" cols="50" placeholder="Vui lòng nhập bình luận của bạn tại đây..."></textarea>
+</fieldset>
+
+<br>
+
+<button type="submit">Gửi khảo sát</button>
+</form>
+</body>
+</html>
