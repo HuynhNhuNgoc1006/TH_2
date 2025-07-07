@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size:sans-serif;
+        margin:0;
+        padding:15px;
+        border-radius:8px;
+        background-color:#f4f4f4;
+        display:grid;
+        justify-content:center;
+        align-items:center;
+
+    }
+
+    form {
+        background-color:#fff;
+        padding:30px;
+        border-radius:8px;
+        box-shadow:0 4px 8px rgba(0,0,0,0.1);
+        width:600px;
+        max-width:700px;
+        text-align:center;
+    }
+
+    h2 {
+        text-align:center;
+        color:#333;
+        margin:20px 40px;
+
+    }
+
+    label {
+        margin-bottom:20px;
+        font-weight:bold;
+        color:#555;
+    }
+
+    #email {
+        padding:10px;
+        margin-bottom:15px;
+        border:1px solid #ddd;
+        border-radius:4px;
+        box-sizing:border-box;
+    }
+
+   
+
+    #ykien + textarea {
+        resize:vertical;
+        min-height:100px;
+        display:grid;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .rating-stars{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content:center;
+        margin-bottom:15px;
+    }
+
+    .rating-stars {
+        display:flex;
+        flex-direction:row-reverse;
+        justity-content:center;
+        margin-bottom:15px;
+    }
+
+    button {
+        font-weight:bold;
+        color:white;
+        background-color:rgb(109, 141, 247);
+        border:none;
+        padding:10px;
+    }
+    button:hover {
+        background-color:rgb(17, 93, 235);
+    }
+</style>
+<body>
+    <h2>Phản hồi của bạn</h2>
+    <form action="phanhoi" method="post">
+        <div>
+            <label>Đánh giá của bạn:</label><br>
+            <input type="radio" id="1sao" name="danhgia" value="1" required><label for="1sao">1 Sao</label>
+            <input type="radio" id="2sao" name="danhgia" value="2" ><label for="2sao">2 Sao</label>
+            <input type="radio" id="3sao" name="danhgia" value="3" ><label for="3sao">3 Sao</label>
+            <input type="radio" id="4sao" name="danhgia" value="4" ><label for="4sao">4 Sao</label>
+            <input type="radio" id="5sao" name="danhgia" value="5" ><label for="5sao">5 Sao</label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="ykien">Ý kiến/Phản hồi của bạn:</label>
+            <textarea id="ykien" name="ykien" row="5" placeholder="Hãy chia sẻ ý kiến vầ sản phẩm/dịch vụ của chúng tôi..."></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email của bạn:</label><br>
+            <input type="email" id="email" name="email" pleceholder="abc@gmail.com">
+        </div>
+
+        <br>
+
+        <button type="submit">Gửi phản hồi</button>
+        <p>Cảm ơn bạn đã dành thời gian!</p>
+        </div>
+    </form>
+</body>
+</html>
