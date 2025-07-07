@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size:arial, sans-serif;
+        margin:20px;
+        background-color:aliceblue;
+    }
+
+    form {
+        background-color:white;
+        padding:30px;
+        border-radius:8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        max-width:600px;
+        margin:auto;
+    }
+    h2 {
+        color:#333;
+        border-bottom:1px solid #eee;
+        padding-bottom:10px;
+        margin-bottom:20px;
+    }
+
+   
+
+    label {
+        display:block;
+        margin-bottom:5px;
+        font-weight:bold;
+        color:#555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea
+    {
+        width: 600px;
+        padding:8px;
+        border: 1px solid #ccc;
+        border-radius:4px;
+        box-sizing:border-box;
+    }
+    
+
+    textarea {
+        resize:vertical;
+        min-height:60px;
+    }
+
+    .group-label {
+        display:inline-block;
+        font-weight:normal;
+        margin-right:5px;
+    }
+
+    input[type="radio"] {
+        margin-right:5px;
+        cursor:pointer;
+    }
+
+    button {
+        color:white;
+        background-color:pink;
+        border:none;
+        font-weight:bold;
+        padding:10px;
+    }
+
+    button:hover{
+        background-color:rgb(252, 85, 113);
+        
+    }
+
+
+</style>
+<body>
+    <h2>Đơn thanh toán</h2>
+    <form action="thanhtoan" method="post">
+        <h3>Thông tin cá nhân</h3>
+        <div>
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="sdt">Số điện thoại:</label><br>
+            <input type="tel" id="sdt" name="sdt" required>
+        </div>
+
+        <br>
+
+        <h3>Địa chỉ giao hàng</h3>
+        <div>
+            <label for="diachi">Địa chỉ:</label><br>
+            <input type="text" id="diachi" name="diachi" placeholder="Số nhà, tên đường, thôn/xóm/tổ... " required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="tinh">Tỉnh/Thành phố:</label><br>
+            <input type="text" id="tinh" name="tinh" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quan_huyen">Quận/Huyện:</label><br>
+            <input type="text" id="quan_huyen" name="quan_huyen" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phuong_xa">Phường/Xã:</label><br>
+            <input type="text" id="phuong_xa" name="phuong_xa" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="ghichu">Ghi chú đơn hàng (tùy chọn):</label>
+            <textarea type="notes" id="ghichu" name="ghichu" placeholder="VD: Giao ngoài giờ hành chính, gọi điện trước khi giao..."></textarea>
+        </div>
+
+        <br>
+
+        <h3>Phương thức thanh toán</h3>
+        <div class="group-label">
+        <div>
+            <label for="thanhtoan_khinhan">Thanh toán khi nhận hàng (COD)</label>
+            <input type="radio" id="thanhtoan_khinhan" name="thanhtoan" value="COD" checked>
+        </div>
+
+
+        <div>
+            <label for="chuyenkhoan">Chuyển khoản ngân hàng</label>
+            <input type="radio" id="chuyenkhoan" name="thanhtoan" value="chuyenkhoan">
+        </div>
+
+        <div>
+            <label for="thanhtoan_the">Thanh toán bằng thẻ tín dụng/ghi nợ</label>
+            <input type="radio" id="thanhtoan_the" name="thanhtoan" value="thanhtoan_the"> 
+        </div>
+
+        <div>
+            <label for="momo">Ví điện tử momo</label>
+            <input type="radio" id="momo" name="thanhtoan" value="momo">
+        </div>
+        </div>
+        <br>
+
+        <button type="submit">Thanh toán</button>
+        
+    </form>
+</body>
+</html>
